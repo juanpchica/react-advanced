@@ -5,7 +5,7 @@ import Header from "../components/Header"
 const Task = () => {
     return (
         <div>
-          <Header title={2}/> 
+          <Header title="First title"/> 
         </div>
     )
 }

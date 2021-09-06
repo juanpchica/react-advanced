@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-const Header = (props) => {
-    console.log(props);
+const Header = ({title}) => {
     return (
-        <div>
-            Header
-        </div> 
+        <header style={headingStyle}>
+            <h1>{title}</h1>
+        </header>
     )
 }
 Header.defaultProps = {
@@ -14,7 +13,11 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-    title:PropTypes.string
+    title:PropTypes.string.isRequired
+}
+
+const headingStyle = {
+    color: "red"
 }
 
 export default Header
