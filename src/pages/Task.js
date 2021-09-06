@@ -1,11 +1,12 @@
 import React from 'react'
-
 import Header from "../components/Header"
+
+import "./task.css"
 
 const Task = () => {
     return (
         <div>
-          <Header title="First title"/> 
+          <Header/> 
         </div>
     )
 }

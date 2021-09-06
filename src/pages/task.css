@@ -1,0 +1,10 @@
+.btn {
+  padding: 5px 15px;
+  border: none;
+  font-size: 14px;
+  margin: 0 15px;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
