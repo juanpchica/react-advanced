@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Task = () => {
     return (
@@ -9,3 +8,4 @@ const Task = () => {
 }
 
 export default Task
+  
