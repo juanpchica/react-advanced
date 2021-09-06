@@ -1,8 +1,11 @@
+import React from 'react'
+
+import Header from "../components/Header"
 
 const Task = () => {
     return (
         <div>
-          task  
+          <Header title={2}/> 
         </div>
     )
 }
