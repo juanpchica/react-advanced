@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Task = () => {
+const Task = ({task:{text,day,reminder,id}}) => {
+    console.log(text);
     return (
-        <div>
-          task  
+        <div className="task">
+            <h3>{text}</h3>
+            <p>{day}</p>
         </div>
     )
 }
