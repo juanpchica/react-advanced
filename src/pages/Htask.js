@@ -29,7 +29,7 @@ const Htask = () => {
     return (
         <div>
             <Header/>
-            <Tasks tasks={tasks} onDelete={deleteTask}/>
+            {tasks.length === 0 ? <div>No tasks to show</div>: <Tasks tasks={tasks} onDelete={deleteTask}/>}
         </div>
     )
 }
