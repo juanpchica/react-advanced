@@ -5,7 +5,7 @@ import Tasks from './Tasks'
 
 
 const Htask = () => {
-    const [tasks,setTask] = useState([
+    const [tasks,setTasks] = useState([
         {
         "id": 1,
         "text": "Doctors Appointment",
@@ -20,11 +20,16 @@ const Htask = () => {
         }
     ]);
     
+    //Delete task
+    const deleteTask = (id) => {
+        const newTasks = tasks.filter((task)=> task.id !== id);
+        setTasks(newTasks);
+    }
 
     return (
         <div>
             <Header/>
-            <Tasks tasks={tasks}/>
+            <Tasks tasks={tasks} onDelete={deleteTask}/>
         </div>
     )
 }
