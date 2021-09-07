@@ -3,7 +3,7 @@ import React from "react";
 import { Route,Switch,BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
-import Task from "./pages/Task";
+import Htask from "./pages/Htask";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Nav/>
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/task" component={Task}/>
+          <Route path="/tasks" component={Htask}/>
         </Switch>
       </Router>
       

@@ -12,7 +12,6 @@ const Header = ({title}) => {
         <header style={headingStyle} className="header">
             <h1>{title}</h1>
             <Button color="green" onClick={onClick}>Add Task</Button>
-            <Button  onClick={onClick}>Add Task 02</Button>
         </header>
     )
 }
