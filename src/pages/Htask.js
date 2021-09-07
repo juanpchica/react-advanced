@@ -5,7 +5,7 @@ import Tasks from './Tasks'
 
 
 const Htask = () => {
-    const [task,setTask] = useState([
+    const [tasks,setTask] = useState([
         {
         "id": 1,
         "text": "Doctors Appointment",
@@ -24,7 +24,7 @@ const Htask = () => {
     return (
         <div>
             <Header/>
-            <Tasks/>
+            <Tasks tasks={tasks}/>
         </div>
     )
 }
