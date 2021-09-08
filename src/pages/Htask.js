@@ -27,7 +27,7 @@ const Htask = () => {
     }
 
     const toogleReminder = (id) => {
-        const newTask = tasks.find();
+        setTasks(tasks.map((task)=> task.id === id ? {...task,reminder:!task.reminder}: task));
     }
     return (
         <div>
