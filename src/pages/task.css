@@ -13,4 +13,14 @@
   padding: 5px;
   margin-bottom: 10px;
   cursor: pointer;
+  position: relative;
+}
+.task.task-active:after {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background: green;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
