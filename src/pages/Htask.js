@@ -26,10 +26,13 @@ const Htask = () => {
         setTasks(newTasks);
     }
 
+    const toogleReminder = (id) => {
+        const newTask = tasks.find();
+    }
     return (
         <div>
             <Header/>
-            {tasks.length === 0 ? <div>No tasks to show</div>: <Tasks tasks={tasks} onDelete={deleteTask}/>}
+            {tasks.length === 0 ? <div>No tasks to show</div>: <Tasks tasks={tasks} onDelete={deleteTask} toogleReminder={toogleReminder}/>}
         </div>
     )
 }
