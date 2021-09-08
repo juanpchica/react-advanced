@@ -8,3 +8,9 @@
   display: flex;
   align-items: center;
 }
+.task {
+  background: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
