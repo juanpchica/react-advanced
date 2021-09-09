@@ -3,7 +3,9 @@ import React from 'react'
 const AddTask = () => {
     return (
         <div>
-            add new task
+            <form>
+                <input type="text" placeholder="Name a new task.."/>
+            </form>
         </div>
     )
 }
